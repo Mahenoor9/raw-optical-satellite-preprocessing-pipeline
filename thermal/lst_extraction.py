@@ -37,6 +37,7 @@ def extract_lst(thermal_path="B10.tif", output_path="lst.tif", show_plot=True):
         plt.colorbar(label="Temperature (°C)")
         plt.title("Land Surface Temperature")
         plt.axis("off")
+        plt.savefig("assets/lst_map.png", dpi=300, bbox_inches="tight")
         plt.show()
 
 if __name__ == "__main__":
